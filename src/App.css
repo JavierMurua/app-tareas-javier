@@ -1,0 +1,125 @@
+/* Estilo para el fondo oscuro */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título de la aplicación */
+h1 {
+  font-size: 24px;
+}
+
+/* Entrada de texto y botones */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #333333;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007acc;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005b99;
+}
+
+/* Lista de tareas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333333;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+li span {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+/* Botones de acción */
+li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #007acc;
+  color: #ffffff;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #005b99;
+}
+
+/* Estilo para tareas completadas */
+li.completed {
+  background-color: #333333;
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+/* Cambio de colores para el modo oscuro */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode input[type="text"],
+.dark-mode li,
+.dark-mode li button {
+  background-color: #333333;
+}
+
+.dark-mode li.completed {
+  background-color: #333333;
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 2px 5px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    margin-top: 5px;
+  }
+}
