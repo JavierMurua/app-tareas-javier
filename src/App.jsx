@@ -1,11 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import './App.css';
 import Header from './Header';
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(() => {
+    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    return savedTasks;
+  });
   const [newTask, setNewTask] = useState('');
   const [editedTask, setEditedTask] = useState(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
+  // Cargar tareas desde localStorage cuando la aplicación se inicia
+  useEffect(() => {
+    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    setTasks(savedTasks);
+  }, []);// 14:40 
+
+  // Guardar tareas en localStorage cada vez que la lista de tareas cambie
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]); // 14:40 
 
   const addTask = () => {
     if (newTask.trim() !== '') {
@@ -44,7 +62,7 @@ function App() {
     <div className="App">
       <Header />
       <h1>Lista de Tareas</h1>
-      <div>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Nueva tarea"
@@ -56,7 +74,7 @@ function App() {
         ) : (
           <button onClick={addTask}>Agregar</button>
         )}
-      </div>
+      </form>
       <ul>
         {tasks.map((task, index) => (
           <li key={index}>
