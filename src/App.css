@@ -3,12 +3,12 @@ body {
   background-color: #121212;
   color: #ffffff;
   font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 /* Contenedor principal */
 .App {
   text-align: center;
-  padding: 20px;
 }
 
 /* Título de la aplicación */

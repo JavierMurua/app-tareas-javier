@@ -1,34 +1,41 @@
-import React, { useState, useEffect  } from 'react';
-import './App.css';
-import Header from './Header';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Header from "./Header";
 
 function App() {
   const [tasks, setTasks] = useState(() => {
-    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     return savedTasks;
   });
-  const [newTask, setNewTask] = useState('');
+  const [newTask, setNewTask] = useState("");
   const [editedTask, setEditedTask] = useState(null);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
 
   // Cargar tareas desde localStorage cuando la aplicación se inicia
   useEffect(() => {
-    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     setTasks(savedTasks);
-  }, []);// 14:40 
+  }, []);
 
   // Guardar tareas en localStorage cada vez que la lista de tareas cambie
   useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-  }, [tasks]); // 14:40 
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
+  // const addTask = () => {
+  //   if (newTask.trim() !== "") {
+  //     setTasks([{ text: newTask, completed: false }, ...tasks]);
+  //     setNewTask("");
+  //   }
+  // };
 
   const addTask = () => {
-    if (newTask.trim() !== '') {
+    if (newTask.trim() !== "" && !tasks.some(task => task.text === newTask)) {
       setTasks([{ text: newTask, completed: false }, ...tasks]);
-      setNewTask('');
+      setNewTask("");
     }
   };
 
@@ -38,10 +45,10 @@ function App() {
   };
 
   const updateTask = () => {
-    if (editedTask !== null && newTask.trim() !== '') {
+    if (editedTask !== null && newTask.trim() !== "") {
       tasks[editedTask].text = newTask;
       setTasks([...tasks]);
-      setNewTask('');
+      setNewTask("");
       setEditedTask(null);
     }
   };
@@ -80,19 +87,18 @@ function App() {
           <li key={index}>
             <span
               style={{
-                textDecoration: task.completed ? 'line-through' : 'none',
+                textDecoration: task.completed ? "line-through" : "none",
               }}
             >
               {task.text}
             </span>
             <div className="task-buttons">
-    <button onClick={() => editTask(index)}>Editar</button>
-    <button onClick={() => deleteTask(index)}>Eliminar</button>
-    <button onClick={() => toggleComplete(index)}>
-      {task.completed ? 'Pendiente' : 'Completada'}
-    </button>
-  </div>
-
+              <button onClick={() => editTask(index)}>Editar</button>
+              <button onClick={() => deleteTask(index)}>Eliminar</button>
+              <button onClick={() => toggleComplete(index)}>
+                {task.completed ? "Pendiente" : "Completada"}
+              </button>
+            </div>
           </li>
         ))}
       </ul>
