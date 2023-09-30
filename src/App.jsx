@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
-import Header from "./Header";
+import React, { useState, useEffect  } from 'react';
+import './App.css';
+import Header from './Header';
 
 function App() {
   const [tasks, setTasks] = useState(() => {
@@ -23,11 +23,11 @@ function App() {
 
   // Guardar tareas en localStorage cada vez que la lista de tareas cambie
   useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]); // 14:40 
 
   const addTask = () => {
-    if (newTask.trim() !== "" && !tasks.some((task) => task.text === newTask)) {
+    if (newTask.trim() !== '') {
       setTasks([{ text: newTask, completed: false }, ...tasks]);
       setNewTask("");
     }
