@@ -1,8 +1,89 @@
-# React + Vite
+# **App Tareas Javier**  
+Una sencilla y funcional aplicación de gestión de tareas accesible desde cualquier navegador. Ideal para organizar tus actividades diarias de manera rápida y sin complicaciones.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## **🎯 Características principales**
+- **Simplicidad al máximo**: Interfaz amigable e intuitiva para que cualquier usuario pueda usarla sin curva de aprendizaje.
+- **Gestión completa de tareas**:  
+  - Agrega, edita y elimina tareas fácilmente.
+  - Marca tareas como completadas o pendientes con un solo clic.
+  - Visualiza tus tareas pendientes y decide si deseas ocultar o mostrar las completadas.
+- **Datos siempre disponibles**: Todas las tareas se guardan automáticamente en el navegador mediante `localStorage`, asegurando su persistencia entre sesiones.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> **⚠️ Nota importante:** Si borras el caché de tu navegador, las tareas almacenadas se eliminarán.
+
+---
+
+## **🚀 ¿Por qué usar esta aplicación?**
+- **Ideal para el día a día:** Perfecta para realizar listas rápidas de tareas o recordatorios.
+- **Sin necesidad de instalación:** Simplemente abre la aplicación en tu navegador y comienza a usarla.
+- **Completamente gratuita y de código abierto:** Aprende cómo funciona y modifícala según tus necesidades.
+
+---
+
+## **🛠️ Tecnologías usadas**
+Esta aplicación utiliza las siguientes tecnologías y dependencias clave:  
+- **React**: Biblioteca para construir interfaces de usuario dinámicas.  
+  - Versión: `^18.2.0`
+- **React-DOM**: Manejo de estructuras del DOM en aplicaciones React.  
+  - Versión: `^18.2.0`
+- **Vite**: Herramienta de desarrollo rápido que optimiza la carga de módulos.  
+  - Versión: `^4.4.5`
+- **ESLint**: Linter para garantizar la calidad del código.  
+  - Versión: `^8.45.0`
+- **Plugins relacionados**:  
+  - `@vitejs/plugin-react`: `^4.0.3`
+  - `eslint-plugin-react`: `^7.32.2`
+  - `eslint-plugin-react-hooks`: `^4.6.0`
+
+Además, se utilizan las siguientes herramientas para tipado y ayuda al desarrollo:  
+- **@types/react**: `^18.2.15`
+- **@types/react-dom**: `^18.2.7`
+
+---
+
+## **📋 Instalación en local y uso**
+### **Requisitos previos**
+- Tener instalado [Node.js](https://nodejs.org/) (versión recomendada: 16 o superior).
+- Un navegador moderno como Chrome, Firefox, Edge o Safari.
+
+### **Pasos para clonar y ejecutar el proyecto localmente**
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/tuusuario/app-tareas-javier.git
+   ```
+2. **Accede al directorio del proyecto:**
+   ```bash
+   cd app-tareas-javier
+   ```
+3. **Instala las dependencias:**
+   ```bash
+   npm install
+   ```
+4. **Inicia el servidor de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+5. Abre tu navegador y accede a la URL indicada (por lo general, `http://localhost:5173`).
+
+---
+
+## **🖼️ Capturas de pantalla**
+![Ejemplo de tareas](image.png)
+![Ejemplo de tareas sin completar](image-1.png)
+---
+
+## **🤝 Contribuciones**
+¿Tienes ideas para mejorar esta aplicación? ¡Estaré encantado de recibir tus aportes!  
+1. Haz un _fork_ del proyecto.
+2. Crea una rama para tu funcionalidad o mejora:
+   ```bash
+   git checkout -b mejora-nueva-funcionalidad
+   ```
+3. Envía un **pull request** cuando estés listo.
+
+---
+
+## **📄 Licencia**
+Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT), lo que significa que eres libre de usar, modificar y distribuir el código, siempre que incluyas la atribución correspondiente.
