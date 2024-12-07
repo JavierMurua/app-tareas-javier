@@ -1,7 +1,3 @@
-Aquí está el README actualizado, con el enlace al dominio destacado al inicio para incentivar a los usuarios a probar la aplicación.
-
----
-
 # **App Tareas Javier**  
 
 ¡Organiza tus tareas de manera rápida y sencilla!  
