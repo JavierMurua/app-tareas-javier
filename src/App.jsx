@@ -1,4 +1,4 @@
-import React, { useState, useEffect  } from 'react';
+import { useState, useEffect  } from 'react';
 import './App.css';
 import Header from './Header';
 
@@ -24,10 +24,10 @@ function App() {
   // Guardar tareas en localStorage cada vez que la lista de tareas cambie
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
-  }, [tasks]); // 14:40 
+  }, [tasks]); 
 
   const addTask = () => {
-    if (newTask.trim() !== '') {
+    if (newTask.trim() !== "" && !tasks.some((task) => task.text === newTask)) {
       setTasks([{ text: newTask, completed: false }, ...tasks]);
       setNewTask("");
     }
@@ -137,14 +137,14 @@ function App() {
         </tbody>
       </table>
       <div>
-      <label class="checkbox-label">
-      <label class="switch">
+      <label className="checkbox-label">
+      <label className="switch">
       <input
           type="checkbox"
           checked={showCompletedTasks}
           onChange={() => setShowCompletedTasks(!showCompletedTasks)}
         />
-        <span class="slider"></span>
+        <span className="slider"></span>
     </label>
         Mostrar Tareas Completadas
         </label>
@@ -170,8 +170,8 @@ function App() {
               </td>
               <td className="task-buttons-cell">
                 <div className="task-buttons">
-                  <button onClick={() => editTask(index)}>Editar</button>
-                  <button onClick={() => deleteTask(index)}>Eliminar</button>
+                  <button onClick={() => editTask(tasks.indexOf(task))}>Editar</button>
+                  <button onClick={() => deleteTask(tasks.indexOf(task))}>Eliminar</button>
                   {/* Corregir el índice pasado a toggleComplete */}
                   <button onClick={() => toggleComplete(tasks.indexOf(task))}>
                     {task.completed ? "Pendiente" : "Completada"}
