@@ -1,7 +1,7 @@
 # **App Tareas Javier**  
 
 ¡Organiza tus tareas de manera rápida y sencilla!  
-**Prueba la aplicación ahora mismo en:**  
+**Prueba la aplicación ahora mismo de forma TOTALMENTE GRATUITA en:**  
 👉 [https://apptareas.muruadev.com/](https://apptareas.muruadev.com/)  
 
 ---
@@ -74,8 +74,8 @@ Además, se utilizan las siguientes herramientas para tipado y ayuda al desarrol
 ---
 
 ## **🖼️ Capturas de pantalla**
-_¡Próximamente!_ Puedes incluir aquí capturas o GIFs para mostrar la aplicación en acción.
-
+![Tareas pendientes y completadas](image.png)
+![Tareas pendientes](image-1.png)
 ---
 
 ## **🤝 Contribuciones**
