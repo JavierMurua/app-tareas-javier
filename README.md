@@ -1,5 +1,12 @@
+Aquí está el README actualizado, con el enlace al dominio destacado al inicio para incentivar a los usuarios a probar la aplicación.
+
+---
+
 # **App Tareas Javier**  
-Una sencilla y funcional aplicación de gestión de tareas accesible desde cualquier navegador. Ideal para organizar tus actividades diarias de manera rápida y sin complicaciones.
+
+¡Organiza tus tareas de manera rápida y sencilla!  
+**Prueba la aplicación ahora mismo en:**  
+👉 [https://apptareas.muruadev.com/](https://apptareas.muruadev.com/)  
 
 ---
 
@@ -18,6 +25,7 @@ Una sencilla y funcional aplicación de gestión de tareas accesible desde cualq
 ## **🚀 ¿Por qué usar esta aplicación?**
 - **Ideal para el día a día:** Perfecta para realizar listas rápidas de tareas o recordatorios.
 - **Sin necesidad de instalación:** Simplemente abre la aplicación en tu navegador y comienza a usarla.
+- **¡Directamente accesible en línea!**: Usa la aplicación sin configurar nada en [https://apptareas.muruadev.com/](https://apptareas.muruadev.com/).
 - **Completamente gratuita y de código abierto:** Aprende cómo funciona y modifícala según tus necesidades.
 
 ---
@@ -43,7 +51,7 @@ Además, se utilizan las siguientes herramientas para tipado y ayuda al desarrol
 
 ---
 
-## **📋 Instalación en local y uso**
+## **📋 Instalación y uso local**
 ### **Requisitos previos**
 - Tener instalado [Node.js](https://nodejs.org/) (versión recomendada: 16 o superior).
 - Un navegador moderno como Chrome, Firefox, Edge o Safari.
@@ -70,8 +78,8 @@ Además, se utilizan las siguientes herramientas para tipado y ayuda al desarrol
 ---
 
 ## **🖼️ Capturas de pantalla**
-![Ejemplo de tareas](image.png)
-![Ejemplo de tareas sin completar](image-1.png)
+_¡Próximamente!_ Puedes incluir aquí capturas o GIFs para mostrar la aplicación en acción.
+
 ---
 
 ## **🤝 Contribuciones**
@@ -87,3 +95,8 @@ Además, se utilizan las siguientes herramientas para tipado y ayuda al desarrol
 
 ## **📄 Licencia**
 Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT), lo que significa que eres libre de usar, modificar y distribuir el código, siempre que incluyas la atribución correspondiente.
+
+---
+
+¡No esperes más! Organiza tus tareas fácilmente desde cualquier dispositivo.  
+👉 **Accede a la aplicación ahora:** [https://apptareas.muruadev.com/](https://apptareas.muruadev.com/)
