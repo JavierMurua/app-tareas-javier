@@ -4,6 +4,7 @@ body {
   color: #ffffff;
   font-family: Arial, sans-serif;
   margin: 0;
+  z-index: 0;
 }
 
 /* Contenedor principal */
@@ -27,7 +28,7 @@ input[type="text"] {
   border: none;
   background-color: #333333;
   color: #ffffff;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
 }
 
 button {
@@ -207,6 +208,7 @@ table .completed-row {
   width: 30px;
   height: 17px;
   margin-right: 10px;
+  z-index: 0;
 }
 
 .switch input {
@@ -226,6 +228,7 @@ table .completed-row {
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 17px;
+  z-index: 1;
 }
 
 .slider:before {

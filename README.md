@@ -14,7 +14,7 @@
   - Visualiza tus tareas pendientes y decide si deseas ocultar o mostrar las completadas.
 - **Datos siempre disponibles**: Todas las tareas se guardan automáticamente en el navegador mediante `localStorage`, asegurando su persistencia entre sesiones.
 
-> **⚠️ Nota importante:** Si borras el caché de tu navegador, las tareas almacenadas se eliminarán.
+> **⚠️ Nota importante:** Si borras el caché de tu navegador, las tareas almacenadas se eliminarán. [Más información](https://muruadev.com/preguntas-frecuentes-app-tareas/)
 
 ---
 
@@ -75,7 +75,10 @@ Además, se utilizan las siguientes herramientas para tipado y ayuda al desarrol
 
 ## **🖼️ Capturas de pantalla**
 ![Tareas pendientes y completadas](image.png)
+
+
 ![Tareas pendientes](image-1.png)
+
 ---
 
 ## **🤝 Contribuciones**

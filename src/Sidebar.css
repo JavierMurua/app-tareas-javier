@@ -1,0 +1,84 @@
+.menu-button {
+    background-color: #005b99;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    left: 2vw;
+    top: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button:hover {
+    background-color: #00427d;
+  }
+  
+  
+
+.sidebar {
+    box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.sidebar .info{
+    text-align: justify;
+    
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.close-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.sidebar a {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #393e46;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    min-width: 90%;
+  }
+  
+  .sidebar a:hover {
+    background-color: #007acc;
+    transform: scale(1.05);
+    color: #ffffff;
+  }
+  
